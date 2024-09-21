@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">Service Provider Profile</div>
+        <nav class="navigation">
+            <button class="nav-button" aria-label="Go to Home">Home</button>
+            <button class="nav-button" aria-label="View Services">Services</button>
+            <button class="nav-button" aria-label="Learn About Us">About</button>
+            <form class="search-field" role="search">
+                <input type="search" id="site-search" class="search-text" placeholder="Search in site" aria-label="Search through the site">
+                <button type="submit" class="search-icon" aria-label="Submit search">🔍</button>
+            </form>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="profile-avatar">
+                <span class="avatar-text">John D.</span> <!-- Change this text as needed -->
+            </div>
+            <div class="provider-info">
+                <h2 class="provider-name">Service Provider Name</h2>
+                <div class="provider-details">
+                    <span class="detail-tag">Contact: provider@example.com</span>
+                    <span class="detail-tag">Phone: (123) 456-7890</span>
+                    <span class="detail-tag">Rating: 4.8</span>
+                    <span class="detail-tag">Categories: Category1, Category2</span>
+                </div>
+                <div class="provider-description-container">
+                    <p class="provider-description">Detailed service description goes here.</p>
+                    <button class="contact-btn" aria-label="Contact the service provider">Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-form">
+            <h2 class="form-title">Leave a Review</h2>
+            <form class="form-container">
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="reviewer-name">Your Name</label>
+                        <input type="text" id="reviewer-name" class="input-field small-input" placeholder="Enter your name" required aria-required="true">
+                    </div>
+                </div>
+                <div class="rating-container">
+                    <label>Rating</label>
+                    <div class="rating-options small-rating">
+                        <button type="button">⭐️</button>
+                        <button type="button">⭐️⭐️</button>
+                        <button type="button">⭐️⭐️⭐️</button>
+                        <button type="button">⭐️⭐️⭐️⭐️</button>
+                        <button type="button">⭐️⭐️⭐️⭐️⭐️</button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="review-comments">Comments</label>
+                    <textarea id="review-comments" class="input-field small-textarea" placeholder="Share your experience" maxlength="200" required></textarea>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="reviews-section">
+            <h2 class="reviews-title">Customer Reviews</h2>
+            <div class="reviews-list">
+                <article class="review-card">
+                    <div class="reviewer">
+                        <span class="reviewer-name">Customer 1</span>
+                        <span class="review-rating">⭐️⭐️⭐️⭐️⭐️</span>
+                    </div>
+                    <p class="review-text">Great service, highly recommend!</p>
+                </article>
+                <article class="review-card">
+                    <div class="reviewer">
+                        <span class="reviewer-name">Customer 2</span>
+                        <span class="review-rating">⭐️⭐️⭐️⭐️⭐️</span>
+                    </div>
+                    <p class="review-text">Very professional and courteous.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="service-info">
+            <h2 class="service-title">Service Information</h2>
+            <div class="service-details">
+                <div class="service-item">
+                    <span class="service-icon">📍</span>
+                    <div class="service-info-container">
+                        <h3>Location</h3>
+                        <p>City, Country</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">🕒</span>
+                    <div class="service-info-container">
+                        <h3>Availability</h3>
+                        <p>Mon-Fri, 9AM-5PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

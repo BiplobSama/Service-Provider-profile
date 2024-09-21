@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-button, .submit-btn, .contact-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.nav-button:hover, .submit-btn:hover, .contact-btn:hover {
+    background-color: #333;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    color: white;
+}
+
+.avatar-text {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+}
+
+.provider-info {
+    flex: 1;
+    background-color: #2c2c2c;
+    padding: 15px;
+    color: white;
+}
+
+.provider-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.provider-description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.provider-description {
+    margin: 0;
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.contact-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.review-form, .reviews-section, .service-info {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-title, .reviews-title, .service-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.input-field, .small-input, .small-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.small-rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button {
+    text-align: right;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reviews-list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-card {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    width: 48%;
+}
+
+.service-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+@media (max-width: 992px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1200px) {
+    .service-details {
+        flex-direction: column;
+    }
+}
